@@ -15,5 +15,8 @@ class MyClass03{
     }
 }
 class MySubClass031 extends MyClass03{
-
+    void setName(String name){
+        //private field는 자식클래스에서 사용할수 없음
+//        this.name = name;
+    }
 }
