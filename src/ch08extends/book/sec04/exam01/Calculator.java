@@ -4,6 +4,6 @@ public class Calculator {
     //메소드 선언
     public double areaCircle(double r) {
         System.out.println("Computer 객체의 areaCircle() 실행");
-        return Math.PI * r * r;
+        return 3.14159 * r * r;
     }
 }
