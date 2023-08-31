@@ -4,6 +4,9 @@ public class Parent {
 
     public String field1;
 
+    public Parent(String name) {
+    }
+
     public void method1(){
         System.out.println("Parent-method1()");
     }
