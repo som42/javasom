@@ -26,4 +26,7 @@ class MyClass081 implements MyInterface08{
     public void otherMethod(){
         System.out.println("MyClass081.otherMethod");
     }
+
+    public interface NestedInterface {
+    }
 }
