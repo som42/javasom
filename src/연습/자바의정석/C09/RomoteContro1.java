@@ -1,4 +1,4 @@
-package 연습;
+package 연습.자바의정석.C09;
 
 import ch09nested.book.sec07.exam02.RemoteControl;
 

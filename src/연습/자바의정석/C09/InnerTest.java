@@ -1,4 +1,4 @@
-package 연습;
+package 연습.자바의정석.C09;
 class AAA{  //AAA는 BBB의 외부 클래스
     int i;
     BBB b = new BBB();

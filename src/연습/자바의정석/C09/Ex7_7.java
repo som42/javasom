@@ -1,4 +1,4 @@
-package 연습;
+package 연습.자바의정석.C09;
 
 import java.lang.module.FindException;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package 연습;
+package 연습.자바의정석.C09;
 
 public class Ex7_12 {
     class InstanceInner{

@@ -1,4 +1,6 @@
-package 연습;
+package 연습.자바의정석.C09;
+
+import 연습.자바의정석.C09.Ex7_7;
 
 import static org.junit.jupiter.api.Assertions.*;
 

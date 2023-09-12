@@ -1,4 +1,4 @@
-package 연습;
+package 연습.자바의정석.C09;
 
 public class Ex_13 {
     // 인스턴스 멤버가 static멤버 쓰는건 되지만 static멤버가 인스턴스멤버 쓰는것은 안된다
