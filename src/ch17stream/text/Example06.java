@@ -12,6 +12,13 @@ public class Example06 {
                 new Member06("신용권",40),
                 new Member06("감자바", 26)
         );
+
+        double avg;
+        avg = list.stream()
+                .map(m->m.getAge())
+                        .reduce(0,(x,y) ->x+y/3);
+        System.out.println("avg = " + avg);
+
         System.out.println("나이들만 출력");
         list.stream()
                 .map(x -> x.getAge())

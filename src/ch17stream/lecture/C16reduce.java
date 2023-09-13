@@ -15,7 +15,7 @@ public class C16reduce {
                 .reduce(Integer.MIN_VALUE, Math::max);
         System.out.println("max2 = " + max2);
 
-        list2.str
+
 
     }
 }
