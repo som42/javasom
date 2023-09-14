@@ -8,10 +8,22 @@ import java.util.stream.Collectors;
 public class Example08 {
     public static void main(String[] args) {
         List<Member08> list = Arrays.asList(
-                new Member08("홍길동","개발자"),
-                new Member08("김나리","디자이너"),
-                new Member08("신용권","개발자")
+                new Member08("홍길동", "개발자"),
+                new Member08("김나리", "디자이너"),
+                new Member08("신용권", "개발자")
         );
+
+        Map<String, List<Member08>> collect = list.stream()
+                .collect(Collectors.groupingBy(m -> m.getJob()));
+        System.out.println("[개발자]");
+        collect.get("개발자")
+                .forEach(System.out::println);
+
+        System.out.println("[디자이너]");
+        collect.get("디자이너")
+                .forEach(System.out::println);
+
+
         System.out.println("개발자");
         list.stream()
                 .filter(m-> m.getJob().equals("개발자"))

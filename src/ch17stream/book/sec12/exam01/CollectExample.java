@@ -36,5 +36,28 @@ public class CollectExample {
                 );
 
         System.out.println(map);
+
+
+        //------------------------------------
+
+        Map<String, List<Student>> map1 = totalList.stream()
+                .collect(Collectors.groupingBy(s ->s.getSex()));
+
+        List<Student> maleList1 = map1.get("남");
+        maleList1.stream()
+                .forEach(s -> System.out.println(s.getName()));
+        System.out.println();
+
+        List<Student> famaleList1 = map1.get("여");
+        famaleList1.stream()
+                .forEach(s-> System.out.println(s.getName()));
+
+        Map<String, Double> map2 = totalList.stream()
+                .collect(Collectors.groupingBy(
+                        s-> s.getSex(),
+                        Collectors.averagingDouble(s -> s.getScore())
+                ));
+        System.out.println(map2);
+
     }
 }
